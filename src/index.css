@@ -2,41 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Community AI Forum Design System */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Page backgrounds */
+    --background: 210 20% 98%; /* #F9FAFB equivalent */
+    --foreground: 220 39% 11%; /* #111827 equivalent */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Card and container backgrounds */
+    --card: 0 0% 100%; /* Pure white */
+    --card-foreground: 220 39% 11%;
 
+    /* Popover and dropdown backgrounds */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 220 39% 11%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary blue theme */
+    --primary: 217 91% 60%; /* #2563EB equivalent */
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 217 91% 55%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary green for success states */
+    --secondary: 158 64% 52%; /* #10B981 equivalent */
+    --secondary-foreground: 0 0% 100%;
+    --secondary-hover: 158 64% 47%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Amber accent for highlights and tags */
+    --accent: 43 96% 56%; /* #F59E0B equivalent */
+    --accent-foreground: 0 0% 100%;
+    --accent-hover: 43 96% 51%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Muted colors for secondary text */
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%; /* #6B7280 equivalent */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Error/destructive red */
+    --destructive: 0 84% 60%; /* #EF4444 equivalent */
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders and inputs */
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 217 91% 60%;
 
-    --radius: 0.5rem;
+    /* Vote colors */
+    --vote-up: 158 64% 52%; /* Green for upvotes */
+    --vote-down: 0 84% 60%; /* Red for downvotes */
+    --vote-neutral: 220 9% 46%; /* Gray for neutral */
+
+    /* Reputation colors */
+    --reputation-high: 43 96% 56%; /* Gold */
+    --reputation-medium: 158 64% 52%; /* Green */
+    --reputation-low: 220 9% 46%; /* Gray */
+
+    /* Tag colors */
+    --tag-ai: 271 81% 56%; /* Purple for AI tags */
+    --tag-discussion: 217 91% 60%; /* Blue for discussion */
+    --tag-question: 43 96% 56%; /* Amber for questions */
+    --tag-tutorial: 158 64% 52%; /* Green for tutorials */
+
+    --radius: 0.75rem;
 
     --sidebar-background: 0 0% 98%;
 
